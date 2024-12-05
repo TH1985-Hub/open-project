@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>User Creator</title>
+</head>
+<body>
+
+    <h1>Our Creative Team</h1>
+
+    <div class="ui container">
+        <form id="user-form" class="user-form">
+            <div class="ui input">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name"  placeholder="User name" required>
+                </div>
+
+            <div class=" ui input">
+                <label for="user-age">Age</label>    
+                <input type="number" id="user-age"  placeholder="Enter Age" required>
+                </div>
+
+             <div class="ui input">
+                <label for="user-profession">Profession</label>
+                <input type="text" id="user-profession" placeholder="Enter Profession" required>
+              </div>
+
+              <div class="main">
+                <label>Gender</label>
+                <select  id="user-gender" class="Select Gender">
+                    <option value=""disabled selecet >Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="main">
+                <label>Role</label>
+                <select  id="user-role">                
+                    <option value=""> Select a Role</option>
+                    <option value="Director"> Director</option>
+                    <option value="Assistant">Assistant</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Employeer">Employee</option>
+                </select>
+              </div>
+              <button type="submit" class="submit">Creat User</button>
+        </form>
+   
+
+    <div id="users-container" class="ui cards"></div>
+</div>
+      
+          <script type="module" src="./src/scripts/app.js"></script>
+          <script type="module" src="./src/scripts/utils.js"></script>
+          <script type="module" src="./src/scripts/index.js"></script>
+
+</body>
+</html>
